@@ -4,3 +4,6 @@ RandamGame/Packages/
 RandamGame/ProjectSettings/
 RandamGame/Temp/
 RandamGame/UserSettings/
+RandamGame/obj/
+RandamGame/.vs/
+RandamGame/Assembly-CSharp.csproj
