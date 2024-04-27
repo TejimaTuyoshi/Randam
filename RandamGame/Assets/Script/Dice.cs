@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class Dice : MonoBehaviour
@@ -9,6 +10,15 @@ public class Dice : MonoBehaviour
     string _four;
     string _threeToTwo;
     string _twenty;
+    [SerializeField] int _str = 9;
+    [SerializeField] int _con = 9;
+    [SerializeField] int _pow = 9;
+    [SerializeField] int _dex = 9;
+    [SerializeField] int _app = 9;
+    [SerializeField] int _siz = 9;
+    [SerializeField] int _int = 9;
+    [SerializeField] int _edu = 9;
+    bool _result = false;
     [SerializeField] Text text;
     
     // Start is called before the first frame update
@@ -33,30 +43,41 @@ public class Dice : MonoBehaviour
         _four = num3.ToString().PadLeft(1, '0');
         _threeToTwo = num4.ToString().PadLeft(1, '0');
         _twenty = num5.ToString().PadLeft(2, '0');
+        if (_str * 5 >= number ||_siz * 5 >= number ||_pow * 5 >= number ||_int * 5 >= number ||_app * 5 >= number ||_con * 5 >= number ||_dex * 5 >= number ||_edu * 5 >= number) 
+        {
+            _result = true;
+        }
     }
 
     public void Onehundered()
     {
-        text.text = (_hund);
+        if (_result) 
+        {
+            text.text = (_hund + "Å@ê¨å˜");
+        }
+        else 
+        {
+            text.text = (_hund + "Å@é∏îs");
+        }
     }
     public void Six()
     {
-        text.text = (_six);
+            text.text = (_six);
     }
     public void Three()
     {
-        text.text = (_three);
+            text.text = (_three);
     }
     public void Four()
     {
-        text.text = (_four);
+            text.text = (_four);
     }
     public void ThreeToTwo()
     {
-        text.text = (_threeToTwo);
+            text.text = (_threeToTwo);
     }
     public void Twenty()
     {
-        text.text = (_twenty);
+            text.text = (_twenty);
     }
 }
