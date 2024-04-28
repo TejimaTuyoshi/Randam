@@ -80,4 +80,37 @@ public class Dice : MonoBehaviour
     {
             text.text = (_twenty);
     }
+
+    public void STadd()
+    {
+        _str += 1;
+    }
+    public void Cadd()
+    {
+        _con += 1;
+    }
+    public void Padd()
+    {
+        _pow += 1;
+    }
+    public void Dadd()
+    {
+        _dex += 1;
+    }
+    public void Aadd()
+    {
+        _app += 1;
+    }
+    public void SIadd()
+    {
+        _six += 1;
+    }
+    public void Iadd()
+    {
+        _int += 1;
+    }
+    public void Eadd()
+    {
+        _edu += 1;
+    }
 }
