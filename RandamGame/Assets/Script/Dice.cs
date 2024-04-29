@@ -18,7 +18,14 @@ public class Dice : MonoBehaviour
     [SerializeField] int _siz = 9;
     [SerializeField] int _int = 9;
     [SerializeField] int _edu = 9;
-    bool _result = false;
+    bool _resultST = false;
+    bool _resultC = false;
+    bool _resultP = false;
+    bool _resultD = false;
+    bool _resultA = false;
+    bool _resultSI = false;
+    bool _resultI = false;
+    bool _resultE = false;
     [SerializeField] Text text;
     
     // Start is called before the first frame update
@@ -43,19 +50,136 @@ public class Dice : MonoBehaviour
         _four = num3.ToString().PadLeft(1, '0');
         _threeToTwo = num4.ToString().PadLeft(1, '0');
         _twenty = num5.ToString().PadLeft(2, '0');
-        if (_str * 5 >= number ||_siz * 5 >= number ||_pow * 5 >= number ||_int * 5 >= number ||_app * 5 >= number ||_con * 5 >= number ||_dex * 5 >= number ||_edu * 5 >= number) 
+        if (_str * 5 >= number) 
         {
-            _result = true;
+            _resultST = true;
+        }
+        else if (_siz * 5 >= number)
+        {
+            _resultSI = true;
+        }
+        else if (_pow * 5 >= number)
+        {
+            _resultP = true;
+        }
+        else if (_int * 5 >= number)
+        {
+            _resultI = true;
+        }
+        else if (_app * 5 >= number)
+        {
+            _resultA = true;
+        }
+        else if (_con * 5 >= number)
+        {
+            _resultC = true;
+        }
+        else if (_dex * 5 >= number)
+        {
+            _resultD = true;
+        }
+        else if (_edu * 5 >= number)
+        {
+            _resultE = true;
+        }
+        else 
+        {
+            _resultST = false;
+            _resultC = false;
+            _resultP = false;
+            _resultD = false;
+            _resultA = false;
+            _resultSI = false;
+            _resultI = false;
+            _resultE = false;
         }
     }
 
-    public void Onehundered()
+    public void OnehunderedST()
     {
-        if (_result) 
+        if (_resultST) 
         {
             text.text = (_hund + "　成功");
         }
         else 
+        {
+            text.text = (_hund + "　失敗");
+        }
+    }
+    public void OnehunderedC()
+    {
+        if (_resultC)
+        {
+            text.text = (_hund + "　成功");
+        }
+        else
+        {
+            text.text = (_hund + "　失敗");
+        }
+
+    }
+    public void OnehunderedP()
+    {
+        if (_resultP)
+        {
+            text.text = (_hund + "　成功");
+        }
+        else
+        {
+            text.text = (_hund + "　失敗");
+        }
+    }
+    public void OnehunderedD()
+    {
+        if (_resultD)
+        {
+            text.text = (_hund + "　成功");
+        }
+        else
+        {
+            text.text = (_hund + "　失敗");
+        }
+    }
+    public void OnehunderedA()
+    {
+        if (_resultA)
+        {
+            text.text = (_hund + "　成功");
+        }
+        else
+        {
+            text.text = (_hund + "　失敗");
+        }
+    }
+    public void OnehunderedSI()
+    {
+        if (_resultSI)
+        {
+            text.text = (_hund + "　成功");
+        }
+        else
+        {
+            text.text = (_hund + "　失敗");
+        }
+    }
+    public void OnehunderedI()
+    {
+        if (_resultI)
+        {
+            text.text = (_hund + "　成功");
+        }
+        else
+        {
+            text.text = (_hund + "　失敗");
+        }
+    }
+    public void OnehunderedE()
+    {
+        if (_resultE)
+        {
+            text.text = (_hund + "　成功");
+        }
+        else
         {
             text.text = (_hund + "　失敗");
         }
