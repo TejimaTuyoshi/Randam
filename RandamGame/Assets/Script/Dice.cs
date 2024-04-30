@@ -227,7 +227,7 @@ public class Dice : MonoBehaviour
     }
     public void SIadd()
     {
-        _six += 1;
+        _siz += 1;
     }
     public void Iadd()
     {
@@ -236,5 +236,37 @@ public class Dice : MonoBehaviour
     public void Eadd()
     {
         _edu += 1;
+    }
+    public void STminus()
+    {
+        _str -= 1;
+    }
+    public void Cminus()
+    {
+        _con -= 1;
+    }
+    public void Pminus()
+    {
+        _pow -= 1;
+    }
+    public void Dminus()
+    {
+        _dex -= 1;
+    }
+    public void Aminus()
+    {
+        _app -= 1;
+    }
+    public void SIminus()
+    {
+        _siz -= 1;
+    }
+    public void Iminus()
+    {
+        _int -= 1;
+    }
+    public void Eminus()
+    {
+        _edu -= 1;
     }
 }
