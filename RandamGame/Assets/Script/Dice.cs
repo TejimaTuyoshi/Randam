@@ -38,7 +38,7 @@ public class Dice : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        text2.text = ("STR:" + _str + "CON:" + _con + "POW:" + _pow + "DEX:" + _dex + "APP:" + _app + "SIZ:" + _siz + "INT:" + _int + "EDU:" + _edu);
+        text2.text = ("STR:" + _str + " CON:" + _con + " POW:" + _pow + " DEX:" + _dex + " APP:" + _app + " SIZ:" + _siz + " INT:" + _int + " EDU:" + _edu);
         var random = new System.Random();         
         var number = random.Next(00, 100);   // 100面ダイス用
         var num = random.Next(01, 07);//6面ダイス用
