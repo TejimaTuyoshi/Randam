@@ -56,31 +56,31 @@ public class Dice : MonoBehaviour
         {
             _resultST = true;
         }
-        else if (_siz * 5 >= number)
+        if (_siz * 5 >= number)
         {
             _resultSI = true;
         }
-        else if (_pow * 5 >= number)
+        if (_pow * 5 >= number)
         {
             _resultP = true;
         }
-        else if (_int * 5 >= number)
+        if (_int * 5 >= number)
         {
             _resultI = true;
         }
-        else if (_app * 5 >= number)
+        if (_app * 5 >= number)
         {
             _resultA = true;
         }
-        else if (_con * 5 >= number)
+        if (_con * 5 >= number)
         {
             _resultC = true;
         }
-        else if (_dex * 5 >= number)
+        if (_dex * 5 >= number)
         {
             _resultD = true;
         }
-        else if (_edu * 5 >= number)
+        if (_edu * 5 >= number)
         {
             _resultE = true;
         }
@@ -189,6 +189,7 @@ public class Dice : MonoBehaviour
     public void Six()
     {
             text.text = (_six);
+
     }
     public void Three()
     {
