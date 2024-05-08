@@ -1,12 +1,10 @@
-using Unity.VisualScripting;
+using JetBrains.Annotations;
+using System;
 using UnityEngine;
-using UnityEngine.Events;
-using UnityEngine.SocialPlatforms;
 using UnityEngine.UI;
 
 public class Dice : MonoBehaviour
 {
-    Rigidbody rb;
     string _hund;
     string _six;
     string _three;
@@ -34,12 +32,19 @@ public class Dice : MonoBehaviour
     [SerializeField] Text text;
     [SerializeField] Text text2;
     [SerializeField] Text text3;
+    [SerializeField] Text text4;
     [SerializeField] GameObject Panel;
+    [SerializeField] GameObject Panel2;//2Å`7ÇÕMinusópÇ≈Ç∑ÅB
+    [SerializeField] GameObject Panel3;
+    [SerializeField] GameObject Panel4;
+    [SerializeField] GameObject Panel5;
+    [SerializeField] GameObject Panel6;
+    [SerializeField] GameObject Panel7;
 
     // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
+     
     }
 
     // Update is called once per frame
@@ -111,6 +116,30 @@ public class Dice : MonoBehaviour
         if (other.gameObject.CompareTag("Battle"))
         {
             Panel.SetActive(true);
+        }
+        if (other.gameObject.CompareTag("Minus"))
+        {
+            switch (_move)
+            {
+                case 1:
+                    Panel2.SetActive(true);
+                    break;
+                case 2:
+                    Panel3.SetActive(true);
+                    break;
+                case 3:
+                    Panel4.SetActive(true);
+                    break;
+                case 4:
+                    Panel5.SetActive(true);
+                    break;
+                case 5:
+                    Panel6.SetActive(true);
+                    break;
+                case 6:
+                    Panel7.SetActive(true);
+                    break;
+            }
         }
 
     }
@@ -298,5 +327,30 @@ public class Dice : MonoBehaviour
     public void Eminus()
     {
         _edu -= 1;
+    }
+
+    void Minus1()
+    {
+        text3.text = ("");
+    }
+    void Minus2()
+    {
+        text3.text = ("");
+    }
+    void Minus3()
+    {
+        text3.text = ("");
+    }
+    void Minus4()
+    {
+        text3.text = ("");
+    }
+    void Minus5()
+    {
+        text3.text = ("");
+    }
+    void Minus6()
+    {
+        text3.text = ("");
     }
 }
