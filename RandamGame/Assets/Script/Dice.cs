@@ -6,12 +6,14 @@ using UnityEngine.UI;
 
 public class Dice : MonoBehaviour
 {
+    Rigidbody rb;
     string _hund;
     string _six;
     string _three;
     string _four;
     string _threeToTwo;
     string _twenty;
+    [SerializeField] int _move = 0;
     [SerializeField] int _str = 9;
     [SerializeField] int _con = 9;
     [SerializeField] int _pow = 9;
@@ -37,7 +39,7 @@ public class Dice : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -52,6 +54,7 @@ public class Dice : MonoBehaviour
         var num3 = random.Next(01, 05);//4面ダイス用
         var num4 = random.Next(01, 04) + random.Next(01, 04);//3面2回ダイス用
         var num5 = random.Next(01, 21);//20面ダイス用
+        _move = num;
         _hund = number.ToString().PadLeft(2, '0');
         _six = num.ToString().PadLeft(1, '0');
         _three = num2.ToString().PadLeft(1, '0');
@@ -211,7 +214,8 @@ public class Dice : MonoBehaviour
     }
     public void Six()
     {
-            text.text = (_six);
+        text.text = (_six);
+        transform.position += transform.TransformDirection(Vector3.forward)  * 270f * _move * Time.deltaTime;
 
     }
     public void Three()
