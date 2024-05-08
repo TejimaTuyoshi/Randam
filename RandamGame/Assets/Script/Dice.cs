@@ -1,5 +1,7 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SocialPlatforms;
 using UnityEngine.UI;
 
 public class Dice : MonoBehaviour
@@ -28,6 +30,7 @@ public class Dice : MonoBehaviour
     bool _resultE = false;
     [SerializeField] Text text;
     [SerializeField] Text text2;
+    [SerializeField] GameObject Panel;
 
     // Start is called before the first frame update
     void Start()
@@ -95,6 +98,15 @@ public class Dice : MonoBehaviour
             _resultI = false;
             _resultE = false;
         }
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Battle"))
+        {
+            Panel.SetActive(true);
+        }
+
     }
 
     public void OnehunderedST()
