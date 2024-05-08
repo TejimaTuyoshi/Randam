@@ -20,6 +20,7 @@ public class Dice : MonoBehaviour
     [SerializeField] int _siz = 9;
     [SerializeField] int _int = 9;
     [SerializeField] int _edu = 9;
+    [SerializeField] int _hp = 45;
     bool _resultST = false;
     bool _resultC = false;
     bool _resultP = false;
@@ -30,6 +31,7 @@ public class Dice : MonoBehaviour
     bool _resultE = false;
     [SerializeField] Text text;
     [SerializeField] Text text2;
+    [SerializeField] Text text3;
     [SerializeField] GameObject Panel;
 
     // Start is called before the first frame update
@@ -42,6 +44,7 @@ public class Dice : MonoBehaviour
     void Update()
     {
         text2.text = ("STR:" + _str + " CON:" + _con + " POW:" + _pow + " DEX:" + _dex + " APP:" + _app + " SIZ:" + _siz + " INT:" + _int + " EDU:" + _edu);
+        text3.text = ("HP:" + _hp);
         var random = new System.Random();         
         var number = random.Next(00, 100);   // 100ñ É_ÉCÉXóp
         var num = random.Next(01, 07);//6ñ É_ÉCÉXóp
@@ -118,6 +121,7 @@ public class Dice : MonoBehaviour
         else 
         {
             text.text = (_hund + "Å@é∏îs");
+            _hp -= 1;
         }
     }
     public void OnehunderedC()
@@ -129,6 +133,7 @@ public class Dice : MonoBehaviour
         else
         {
             text.text = (_hund + "Å@é∏îs");
+            _hp -= 1;
         }
 
     }
@@ -141,6 +146,7 @@ public class Dice : MonoBehaviour
         else
         {
             text.text = (_hund + "Å@é∏îs");
+            _hp -= 1;
         }
     }
     public void OnehunderedD()
@@ -152,6 +158,7 @@ public class Dice : MonoBehaviour
         else
         {
             text.text = (_hund + "Å@é∏îs");
+            _hp -= 1;
         }
     }
     public void OnehunderedA()
@@ -163,6 +170,7 @@ public class Dice : MonoBehaviour
         else
         {
             text.text = (_hund + "Å@é∏îs");
+            _hp -= 1;
         }
     }
     public void OnehunderedSI()
@@ -174,6 +182,7 @@ public class Dice : MonoBehaviour
         else
         {
             text.text = (_hund + "Å@é∏îs");
+            _hp -= 1;
         }
     }
     public void OnehunderedI()
@@ -185,6 +194,7 @@ public class Dice : MonoBehaviour
         else
         {
             text.text = (_hund + "Å@é∏îs");
+            _hp -= 1;
         }
     }
     public void OnehunderedE()
@@ -196,6 +206,7 @@ public class Dice : MonoBehaviour
         else
         {
             text.text = (_hund + "Å@é∏îs");
+            _hp -= 1;
         }
     }
     public void Six()
