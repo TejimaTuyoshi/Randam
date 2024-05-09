@@ -33,6 +33,7 @@ public class Dice : MonoBehaviour
     [SerializeField] Text text;
     [SerializeField] Text text2;
     [SerializeField] Text text3;
+    [SerializeField] Text text4;
     [SerializeField] GameObject Panel;
     [SerializeField] GameObject Panel2;//2～7はMinus用です。
     [SerializeField] GameObject Panel3;
@@ -123,21 +124,27 @@ public class Dice : MonoBehaviour
             {
                 case 1:
                     Panel2.SetActive(true);
+                    text4.text = ("狂人が現れ、\r\n「化物!」と襲い掛かってきた！");
                     break;
                 case 2:
                     Panel3.SetActive(true);
+                    text4.text = ("狂人が現れ、\r\n「化物!」と襲い掛かってきた！");
                     break;
                 case 3:
                     Panel4.SetActive(true);
+                    text4.text = ("狂人が現れ、\r\n「化物!」と襲い掛かってきた！");
                     break;
                 case 4:
                     Panel5.SetActive(true);
+                    text4.text = ("狂人が現れ、\r\n「化物!」と襲い掛かってきた！");
                     break;
                 case 5:
                     Panel6.SetActive(true);
+                    text4.text = ("狂人が現れ、\r\n「化物!」と襲い掛かってきた！");
                     break;
                 case 6:
                     Panel7.SetActive(true);
+                    text4.text = ("狂人が現れ、\r\n「化物!」と襲い掛かってきた！");
                     break;
             }
             if (_resultST == false && _resultC == false && _resultA == false && _dice == true)
