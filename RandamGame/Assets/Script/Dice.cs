@@ -32,7 +32,6 @@ public class Dice : MonoBehaviour
     [SerializeField] Text text;
     [SerializeField] Text text2;
     [SerializeField] Text text3;
-    [SerializeField] Text text4;
     [SerializeField] GameObject Panel;
     [SerializeField] GameObject Panel2;//2Å`7ÇÕMinusópÇ≈Ç∑ÅB
     [SerializeField] GameObject Panel3;
