@@ -242,8 +242,8 @@ public class Dice : MonoBehaviour
     }
     public void Six()
     {
-        //text.text = (_six);
-        transform.position += transform.TransformDirection(Vector3.forward)  * 270f * _move * Time.deltaTime;
+        text.text = (_six);
+        transform.position += transform.TransformDirection(Vector3.forward) * _move;//マス目移動なので今回はフレーム計算は無し。
 
     }
     public void Three()
