@@ -11349,7 +11349,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9217923135719356388, guid: c434b700af8ea2840ba755f53cb3c4f0, type: 3}
       propertyPath: m_Size.y
-      value: 2
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 9217923135719356388, guid: c434b700af8ea2840ba755f53cb3c4f0, type: 3}
       propertyPath: m_Size.z
@@ -11418,7 +11418,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3224273659110833484, guid: 9871b33089bb1524b8d782f7afcba909, type: 3}
       propertyPath: m_Size.y
-      value: 2
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 3224273659110833484, guid: 9871b33089bb1524b8d782f7afcba909, type: 3}
       propertyPath: m_Size.z
@@ -11560,7 +11560,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5834364001557990775, guid: ff721c1bc0d386144ab620b8ffe726c3, type: 3}
       propertyPath: m_Size.y
-      value: 2
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 5834364001557990775, guid: ff721c1bc0d386144ab620b8ffe726c3, type: 3}
       propertyPath: m_Size.z
@@ -11637,7 +11637,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8457102273266937826, guid: 4771810fe39840e49bebc698ebc01717, type: 3}
       propertyPath: m_Size.y
-      value: 2
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 8457102273266937826, guid: 4771810fe39840e49bebc698ebc01717, type: 3}
       propertyPath: m_Size.z
@@ -11666,7 +11666,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1965062276668850316, guid: 47e24d1c8453bd045863f7bccef25ae6, type: 3}
       propertyPath: m_Size.y
-      value: 2
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 1965062276668850316, guid: 47e24d1c8453bd045863f7bccef25ae6, type: 3}
       propertyPath: m_Size.z
@@ -11787,7 +11787,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5564125661620379019, guid: 899a181e47d071743aa04cdc3c7eb428, type: 3}
       propertyPath: m_Size.y
-      value: 2
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 5564125661620379019, guid: 899a181e47d071743aa04cdc3c7eb428, type: 3}
       propertyPath: m_Size.z
