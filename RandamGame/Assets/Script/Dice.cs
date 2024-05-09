@@ -29,6 +29,7 @@ public class Dice : MonoBehaviour
     bool _resultSI = false;
     bool _resultI = false;
     bool _resultE = false;
+    bool _dice = false;
     [SerializeField] Text text;
     [SerializeField] Text text2;
     [SerializeField] Text text3;
@@ -139,8 +140,23 @@ public class Dice : MonoBehaviour
                     Panel7.SetActive(true);
                     break;
             }
+            if (_resultST == false && _resultC == false && _resultA == false && _dice == true)
+            {
+                _str -= 1;
+                _app -= 1;
+            }
         }
 
+    }
+
+    public void dice()
+    {
+        _dice = true;
+    }
+
+    public void Andice()
+    {
+        _dice = true;
     }
 
     public void OnehunderedST()
@@ -328,28 +344,4 @@ public class Dice : MonoBehaviour
         _edu -= 1;
     }
 
-    void Minus1()
-    {
-        text3.text = ("");
-    }
-    void Minus2()
-    {
-        text3.text = ("");
-    }
-    void Minus3()
-    {
-        text3.text = ("");
-    }
-    void Minus4()
-    {
-        text3.text = ("");
-    }
-    void Minus5()
-    {
-        text3.text = ("");
-    }
-    void Minus6()
-    {
-        text3.text = ("");
-    }
 }
