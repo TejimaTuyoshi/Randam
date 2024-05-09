@@ -242,7 +242,7 @@ public class Dice : MonoBehaviour
     }
     public void Six()
     {
-        text.text = (_six);
+        //text.text = (_six);
         transform.position += transform.TransformDirection(Vector3.forward)  * 270f * _move * Time.deltaTime;
 
     }
