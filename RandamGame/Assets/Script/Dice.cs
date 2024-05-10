@@ -35,12 +35,18 @@ public class Dice : MonoBehaviour
     [SerializeField] Text text3;
     [SerializeField] Text text4;
     [SerializeField] GameObject Panel;
-    [SerializeField] GameObject Panel2;//2～7はMinus用です。
-    [SerializeField] GameObject Panel3;
-    [SerializeField] GameObject Panel4;
-    [SerializeField] GameObject Panel5;
-    [SerializeField] GameObject Panel6;
-    [SerializeField] GameObject Panel7;
+    [SerializeField] GameObject MinusPanel;
+    [SerializeField] GameObject MinusPanel2;
+    [SerializeField] GameObject MinusPanel3;
+    [SerializeField] GameObject MinusPanel4;
+    [SerializeField] GameObject MinusPanel5;
+    [SerializeField] GameObject MinusPanel6;
+    [SerializeField] GameObject PlusPanel;
+    [SerializeField] GameObject PlusPanel2;
+    [SerializeField] GameObject PlusPanel3;
+    [SerializeField] GameObject PlusPanel4;
+    [SerializeField] GameObject PlusPanel5;
+    [SerializeField] GameObject PlusPanel6;
 
     // Start is called before the first frame update
     void Start()
@@ -107,27 +113,57 @@ public class Dice : MonoBehaviour
             switch (_move)
             {
                 case 1:
-                    Panel2.SetActive(true);
+                    MinusPanel.SetActive(true);
                     text4.text = ("狂人が現れ、\r\n「化物!」と襲い掛かってきた！");
                     break;
                 case 2:
-                    Panel3.SetActive(true);
+                    MinusPanel2.SetActive(true);
                     text4.text = ("狂人が現れ、\r\n「化物!」と襲い掛かってきた！");
                     break;
                 case 3:
-                    Panel4.SetActive(true);
+                    MinusPanel3.SetActive(true);
                     text4.text = ("狂人が現れ、\r\n「化物!」と襲い掛かってきた！");
                     break;
                 case 4:
-                    Panel5.SetActive(true);
+                    MinusPanel4.SetActive(true);
                     text4.text = ("狂人が現れ、\r\n「化物!」と襲い掛かってきた！");
                     break;
                 case 5:
-                    Panel6.SetActive(true);
+                    MinusPanel5.SetActive(true);
                     text4.text = ("狂人が現れ、\r\n「化物!」と襲い掛かってきた！");
                     break;
                 case 6:
-                    Panel7.SetActive(true);
+                    MinusPanel6.SetActive(true);
+                    text4.text = ("狂人が現れ、\r\n「化物!」と襲い掛かってきた！");
+                    break;
+            }
+        }
+        if (other.gameObject.CompareTag("Plus"))
+        {
+            switch (_move)
+            {
+                case 1:
+                    PlusPanel.SetActive(true);
+                    text4.text = ("狂人が現れ、\r\n「化物!」と襲い掛かってきた！");
+                    break;
+                case 2:
+                    PlusPanel2.SetActive(true);
+                    text4.text = ("狂人が現れ、\r\n「化物!」と襲い掛かってきた！");
+                    break;
+                case 3:
+                    PlusPanel3.SetActive(true);
+                    text4.text = ("狂人が現れ、\r\n「化物!」と襲い掛かってきた！");
+                    break;
+                case 4:
+                    PlusPanel4.SetActive(true);
+                    text4.text = ("狂人が現れ、\r\n「化物!」と襲い掛かってきた！");
+                    break;
+                case 5:
+                    PlusPanel5.SetActive(true);
+                    text4.text = ("狂人が現れ、\r\n「化物!」と襲い掛かってきた！");
+                    break;
+                case 6:
+                    PlusPanel6.SetActive(true);
                     text4.text = ("狂人が現れ、\r\n「化物!」と襲い掛かってきた！");
                     break;
             }
@@ -143,7 +179,7 @@ public class Dice : MonoBehaviour
     public void OnehunderedST()
     {
         var random = new System.Random();
-        var number = random.Next(00, 100);
+        var number = random.Next(01, 101);
         _hund = number.ToString().PadLeft(2, '0');
         if (_str * 5 >= number)
         {
@@ -166,7 +202,7 @@ public class Dice : MonoBehaviour
     public void OnehunderedC()
     {
         var random = new System.Random();
-        var number = random.Next(00, 100);   // 100面ダイス用
+        var number = random.Next(01, 101);   // 100面ダイス用
         _hund = number.ToString().PadLeft(2, '0');
         if (_con * 5 >= number)
         {
@@ -190,7 +226,7 @@ public class Dice : MonoBehaviour
     public void OnehunderedP()
     {
         var random = new System.Random();
-        var number = random.Next(00, 100);   // 100面ダイス用
+        var number = random.Next(   );   // 100面ダイス用
         _hund = number.ToString().PadLeft(2, '0');
         if (_pow * 5 >= number)
         {
@@ -213,7 +249,7 @@ public class Dice : MonoBehaviour
     public void OnehunderedD()
     {
         var random = new System.Random();
-        var number = random.Next(00, 100);   // 100面ダイス用
+        var number = random.Next(01, 101);   // 100面ダイス用
         _hund = number.ToString().PadLeft(2, '0');
         if (_dex * 5 >= number)
         {
@@ -236,7 +272,7 @@ public class Dice : MonoBehaviour
     public void OnehunderedA()
     {
         var random = new System.Random();
-        var number = random.Next(00, 100);   // 100面ダイス用
+        var number = random.Next(01, 101);   // 100面ダイス用
         _hund = number.ToString().PadLeft(2, '0');
         if (_app * 5 >= number)
         {
@@ -259,7 +295,7 @@ public class Dice : MonoBehaviour
     public void OnehunderedSI()
     {
         var random = new System.Random();
-        var number = random.Next(00, 100);   // 100面ダイス用
+        var number = random.Next(01, 101);   // 100面ダイス用
         _hund = number.ToString().PadLeft(2, '0');
         if (_siz * 5 >= number)
         {
@@ -282,7 +318,7 @@ public class Dice : MonoBehaviour
     public void OnehunderedI()
     {
         var random = new System.Random();
-        var number = random.Next(00, 100);   // 100面ダイス用
+        var number = random.Next(01, 101);   // 100面ダイス用
         _hund = number.ToString().PadLeft(2, '0');
         if (_int * 5 >= number)
         {
@@ -305,7 +341,7 @@ public class Dice : MonoBehaviour
     public void OnehunderedE()
     {
         var random = new System.Random();
-        var number = random.Next(00, 100);   // 100面ダイス用
+        var number = random.Next(01, 101);   // 100面ダイス用
         _hund = number.ToString().PadLeft(2, '0');
         if (_edu * 5 >= number)
         {
@@ -428,5 +464,4 @@ public class Dice : MonoBehaviour
     {
         _edu--;
     }
-
 }
