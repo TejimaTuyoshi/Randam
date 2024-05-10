@@ -59,6 +59,41 @@ public class Dice : MonoBehaviour
             _result = false;
             _str--;
         }
+        if (!_resultC && _result == true)
+        {
+            _result = false;
+            _con--;
+        }
+        if (!_resultP && _result == true)
+        {
+            _result = false;
+            _pow--;
+        }
+        if (!_resultD && _result == true)
+        {
+            _result = false;
+            _dex--;
+        }
+        if (!_resultA && _result == true)
+        {
+            _result = false;
+            _app--;
+        }
+        if (!_resultSI && _result == true)
+        {
+            _result = false;
+            _siz--;
+        }
+        if (!_resultI && _result == true)
+        {
+            _result = false;
+            _int--;
+        }
+        if (!_resultE && _result == true)
+        {
+            _result = false;
+            _edu--;
+        }
     }
 
     void OnTriggerEnter(Collider other)
