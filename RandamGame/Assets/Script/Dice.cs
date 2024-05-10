@@ -204,7 +204,14 @@ public class Dice : MonoBehaviour
                     break;
             }
         }
-
+        if (other.gameObject.CompareTag("Heal"))
+        {
+            if (_hp < 45)
+            {
+                text4.text = ("HP‚ª‰ñ•œ‚µ‚½!Ô¯ÀÈ!");
+                _hp++;
+            }
+        }
     }
 
     public void Result()
