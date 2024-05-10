@@ -47,6 +47,12 @@ public class Dice : MonoBehaviour
     [SerializeField] GameObject PlusPanel4;
     [SerializeField] GameObject PlusPanel5;
     [SerializeField] GameObject PlusPanel6;
+    [SerializeField] GameObject HappeningPanel;
+    [SerializeField] GameObject HappeningPanel2;
+    [SerializeField] GameObject HappeningPanel3;
+    [SerializeField] GameObject HappeningPanel4;
+    [SerializeField] GameObject HappeningPanel5;
+    [SerializeField] GameObject HappeningPanel6;
 
     // Start is called before the first frame update
     void Start()
@@ -164,6 +170,36 @@ public class Dice : MonoBehaviour
                     break;
                 case 6:
                     PlusPanel6.SetActive(true);
+                    text4.text = ("狂人が現れ、\r\n「化物!」と襲い掛かってきた！");
+                    break;
+            }
+        }
+        if (other.gameObject.CompareTag("Happening"))
+        {
+            switch (_move)
+            {
+                case 1:
+                    HappeningPanel.SetActive(true);
+                    text4.text = ("狂人が現れ、\r\n「化物!」と襲い掛かってきた！");
+                    break;
+                case 2:
+                    HappeningPanel2.SetActive(true);
+                    text4.text = ("狂人が現れ、\r\n「化物!」と襲い掛かってきた！");
+                    break;
+                case 3:
+                    HappeningPanel3.SetActive(true);
+                    text4.text = ("狂人が現れ、\r\n「化物!」と襲い掛かってきた！");
+                    break;
+                case 4:
+                    HappeningPanel4.SetActive(true);
+                    text4.text = ("狂人が現れ、\r\n「化物!」と襲い掛かってきた！");
+                    break;
+                case 5:
+                    HappeningPanel5.SetActive(true);
+                    text4.text = ("狂人が現れ、\r\n「化物!」と襲い掛かってきた！");
+                    break;
+                case 6:
+                    HappeningPanel6.SetActive(true);
                     text4.text = ("狂人が現れ、\r\n「化物!」と襲い掛かってきた！");
                     break;
             }
