@@ -1,5 +1,3 @@
-using JetBrains.Annotations;
-using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -53,18 +51,19 @@ public class Dice : MonoBehaviour
     [SerializeField] GameObject HappeningPanel4;
     [SerializeField] GameObject HappeningPanel5;
     [SerializeField] GameObject HappeningPanel6;
+    [SerializeField] GameObject ShopPanel;
 
     // Start is called before the first frame update
     void Start()
     {
- 
+
     }
 
     // Update is called once per frame
     void Update()
     {
         text2.text = ("STR:" + _str + " CON:" + _con + " POW:" + _pow + " DEX:" + _dex + " APP:" + _app + " SIZ:" + _siz + " INT:" + _int + " EDU:" + _edu);
-        text3.text = ("HP:" + _hp + " / 45"); 
+        text3.text = ("HP:" + _hp + " / 45");
 
         if (!_resultST && _result == true)
         {
@@ -209,10 +208,17 @@ public class Dice : MonoBehaviour
             if (_hp < 45)
             {
                 text4.text = ("HPが回復した!ﾔｯﾀﾈ!");
-                _hp++;
+                HP();
             }
         }
+        if (other.gameObject.CompareTag("Shop"))
+        {
+            ShopPanel.SetActive(true);
+        }
     }
+
+    public void HP()
+    { _hp++; }
 
     public void Result()
     {
@@ -232,11 +238,11 @@ public class Dice : MonoBehaviour
         {
             _resultST = false;
         }
-        if (_resultST) 
+        if (_resultST)
         {
             text.text = (_hund + "　成功");
         }
-        else 
+        else
         {
             text.text = (_hund + "　失敗");
             _hp--;
@@ -269,7 +275,7 @@ public class Dice : MonoBehaviour
     public void OnehunderedP()
     {
         var random = new System.Random();
-        var number = random.Next(   );   // 100面ダイス用
+        var number = random.Next();   // 100面ダイス用
         _hund = number.ToString().PadLeft(2, '0');
         if (_pow * 5 >= number)
         {
@@ -412,7 +418,6 @@ public class Dice : MonoBehaviour
         _six = num.ToString().PadLeft(1, '0');
         text.text = (_six);
         transform.position += transform.TransformDirection(Vector3.forward) * _move;//マス目移動なので今回はフレーム計算は無し。
-
     }
     public void Three()
     {
@@ -474,37 +479,5 @@ public class Dice : MonoBehaviour
     public void Eadd()
     {
         _edu++;
-    }
-    public void STminus()
-    {
-        _str--;
-    }
-    public void Cminus()
-    {
-        _con--;
-    }
-    public void Pminus()
-    {
-        _pow--;
-    }
-    public void Dminus()
-    {
-        _dex--;
-    }
-    public void Aminus()
-    {
-        _app--;
-    }
-    public void SIminus()
-    {
-        _siz--;
-    }
-    public void Iminus()
-    {
-        _int--;
-    }
-    public void Eminus()
-    {
-        _edu--;
     }
 }
