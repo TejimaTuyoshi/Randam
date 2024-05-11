@@ -28,6 +28,8 @@ public class Dice : MonoBehaviour
     [SerializeField] bool _resultI = false;
     [SerializeField] bool _resultE = false;
     [SerializeField] bool _result = false;
+    [SerializeField] bool _plus = false;
+    [SerializeField] bool _Happening = false;
     [SerializeField] Text text;
     [SerializeField] Text text2;
     [SerializeField] Text text3;
@@ -104,6 +106,94 @@ public class Dice : MonoBehaviour
         {
             _result = false;
             _edu--;
+        }
+        if (!_resultST && _plus == true)
+        {
+            _plus = false;
+            _str++;
+        }
+        if (!_resultC && _plus == true)
+        {
+            _plus = false;
+            _con++;
+        }
+        if (!_resultP && _plus == true)
+        {
+            _plus = false;
+            _pow++;
+        }
+        if (!_resultD && _plus == true)
+        {
+            _plus = false;
+            _dex++;
+        }
+        if (!_resultA && _plus == true)
+        {
+            _plus = false;
+            _app++;
+        }
+        if (!_resultSI && _plus == true)
+        {
+            _plus = false;
+            _siz++;
+        }
+        if (!_resultI && _plus == true)
+        {
+            _plus = false;
+            _int++;
+        }
+        if (!_resultE && _plus == true)
+        {
+            _plus = false;
+            _edu++;
+        }
+        if (!_resultST && _Happening == true)
+        {
+            _Happening = false;
+            _str++;
+            _app--;
+        }
+        if (!_resultC && _Happening == true)
+        {
+            _Happening = false;
+            _con++;
+            _pow--;
+        }
+        if (!_resultP && _Happening == true)
+        {
+            _Happening = false;
+            _pow++;
+            _con--;
+        }
+        if (!_resultD && _Happening == true)
+        {
+            _Happening = false;
+            _dex++;
+            _siz--;
+        }
+        if (!_resultA && _Happening == true)
+        {
+            _Happening = false;
+            _app++;
+            _str--;
+        }
+        if (!_resultSI && _Happening == true)
+        {
+            _Happening = false;
+            _siz++;
+            _dex--;
+        }
+        if (!_resultI && _Happening == true)
+        {
+            _Happening = false;
+            _int++;
+            _edu--;
+        }
+        if (!_resultE && _Happening == true)
+        {
+            _Happening = false;
+            _edu++;
+            _int--;
         }
     }
 
@@ -220,6 +310,10 @@ public class Dice : MonoBehaviour
 
     public void Result()
     { _result = true; }
+    public void Plus()
+    { _plus = true; }
+    public void Happening()
+    { _Happening = true; }
 
     public void OnehunderedST()
     {
