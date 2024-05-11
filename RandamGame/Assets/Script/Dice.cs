@@ -212,18 +212,14 @@ public class Dice : MonoBehaviour
             }
         }
         if (other.gameObject.CompareTag("Shop"))
-        {
-            ShopPanel.SetActive(true);
-        }
+        { ShopPanel.SetActive(true); }
     }
 
     public void HP()
     { _hp++; }
 
     public void Result()
-    {
-        _result = true;
-    }
+    { _result = true; }
 
     public void OnehunderedST()
     {
@@ -231,17 +227,11 @@ public class Dice : MonoBehaviour
         var number = random.Next(01, 101);
         _hund = number.ToString().PadLeft(2, '0');
         if (_str * 5 >= number)
-        {
-            _resultST = true;
-        }
+        { _resultST = true; }
         else
-        {
-            _resultST = false;
-        }
+        { _resultST = false; }
         if (_resultST)
-        {
-            text.text = (_hund + "　成功");
-        }
+        { text.text = (_hund + "　成功"); }
         else
         {
             text.text = (_hund + "　失敗");
@@ -254,17 +244,11 @@ public class Dice : MonoBehaviour
         var number = random.Next(01, 101);   // 100面ダイス用
         _hund = number.ToString().PadLeft(2, '0');
         if (_con * 5 >= number)
-        {
-            _resultC = true;
-        }
+        { _resultC = true; }
         else
-        {
-            _resultC = false;
-        }
+        { _resultC = false; }
         if (_resultC)
-        {
-            text.text = (_hund + "　成功");
-        }
+        { text.text = (_hund + "　成功"); }
         else
         {
             text.text = (_hund + "　失敗");
@@ -278,17 +262,11 @@ public class Dice : MonoBehaviour
         var number = random.Next();   // 100面ダイス用
         _hund = number.ToString().PadLeft(2, '0');
         if (_pow * 5 >= number)
-        {
-            _resultP = true;
-        }
+        { _resultP = true; }
         else
-        {
-            _resultP = false;
-        }
+        { _resultP = false; }
         if (_resultP)
-        {
-            text.text = (_hund + "　成功");
-        }
+        { text.text = (_hund + "　成功"); }
         else
         {
             text.text = (_hund + "　失敗");
@@ -301,17 +279,11 @@ public class Dice : MonoBehaviour
         var number = random.Next(01, 101);   // 100面ダイス用
         _hund = number.ToString().PadLeft(2, '0');
         if (_dex * 5 >= number)
-        {
-            _resultD = true;
-        }
+        { _resultD = true; }
         else
-        {
-            _resultD = false;
-        }
+        { _resultD = false; }
         if (_resultD)
-        {
-            text.text = (_hund + "　成功");
-        }
+        { text.text = (_hund + "　成功"); }
         else
         {
             text.text = (_hund + "　失敗");
@@ -324,17 +296,11 @@ public class Dice : MonoBehaviour
         var number = random.Next(01, 101);   // 100面ダイス用
         _hund = number.ToString().PadLeft(2, '0');
         if (_app * 5 >= number)
-        {
-            _resultA = true;
-        }
+        { _resultA = true; }
         else
-        {
-            _resultA = false;
-        }
+        { _resultA = false; }
         if (_resultA)
-        {
-            text.text = (_hund + "　成功");
-        }
+        { text.text = (_hund + "　成功"); }
         else
         {
             text.text = (_hund + "　失敗");
@@ -347,17 +313,11 @@ public class Dice : MonoBehaviour
         var number = random.Next(01, 101);   // 100面ダイス用
         _hund = number.ToString().PadLeft(2, '0');
         if (_siz * 5 >= number)
-        {
-            _resultSI = true;
-        }
+        { _resultSI = true; }
         else
-        {
-            _resultSI = false;
-        }
+        { _resultSI = false; }
         if (_resultSI)
-        {
-            text.text = (_hund + "　成功");
-        }
+        { text.text = (_hund + "　成功"); }
         else
         {
             text.text = (_hund + "　失敗");
@@ -370,17 +330,11 @@ public class Dice : MonoBehaviour
         var number = random.Next(01, 101);   // 100面ダイス用
         _hund = number.ToString().PadLeft(2, '0');
         if (_int * 5 >= number)
-        {
-            _resultI = true;
-        }
+        { _resultI = true; }
         else
-        {
-            _resultI = false;
-        }
+        { _resultI = false; }
         if (_resultI)
-        {
-            text.text = (_hund + "　成功");
-        }
+        { text.text = (_hund + "　成功"); }
         else
         {
             text.text = (_hund + "　失敗");
@@ -393,17 +347,11 @@ public class Dice : MonoBehaviour
         var number = random.Next(01, 101);   // 100面ダイス用
         _hund = number.ToString().PadLeft(2, '0');
         if (_edu * 5 >= number)
-        {
-            _resultE = true;
-        }
+        { _resultE = true; }
         else
-        {
-            _resultE = false;
-        }
+        { _resultE = false; }
         if (_resultE)
-        {
-            text.text = (_hund + "　成功");
-        }
+        { text.text = (_hund + "　成功"); }
         else
         {
             text.text = (_hund + "　失敗");
@@ -449,35 +397,19 @@ public class Dice : MonoBehaviour
     }
 
     public void STadd()
-    {
-        _str++;
-    }
+    { _str++; }
     public void Cadd()
-    {
-        _con++;
-    }
+    { _con++; }
     public void Padd()
-    {
-        _pow++;
-    }
+    { _pow++; }
     public void Dadd()
-    {
-        _dex++;
-    }
+    { _dex++; }
     public void Aadd()
-    {
-        _app++;
-    }
+    { _app++; }
     public void SIadd()
-    {
-        _siz++;
-    }
+    { _siz++; }
     public void Iadd()
-    {
-        _int++;
-    }
+    { _int++; }
     public void Eadd()
-    {
-        _edu++;
-    }
+    { _edu++; }
 }
