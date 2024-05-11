@@ -123,11 +123,11 @@ public class Dice : MonoBehaviour
                     break;
                 case 2:
                     MinusPanel2.SetActive(true);
-                    text4.text = ("狂人が現れ、\r\n「化物!」と襲い掛かってきた！");
+                    text4.text = ("自信が発生!\r\n足場が崩れそうだ...");
                     break;
                 case 3:
                     MinusPanel3.SetActive(true);
-                    text4.text = ("狂人が現れ、\r\n「化物!」と襲い掛かってきた！");
+                    text4.text = ("壁が現れ、\r\n基本教養を求めてきた!");
                     break;
                 case 4:
                     MinusPanel4.SetActive(true);

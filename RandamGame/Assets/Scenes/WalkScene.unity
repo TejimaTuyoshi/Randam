@@ -6204,7 +6204,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5236362487935520046, guid: 4fe54c34e578d334880500d31d9e7694, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnehunderedC
+      value: OnehunderedE
       objectReference: {fileID: 0}
     - target: {fileID: 5236362487935520046, guid: 4fe54c34e578d334880500d31d9e7694, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
@@ -6296,7 +6296,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6514927299713338698, guid: 4fe54c34e578d334880500d31d9e7694, type: 3}
       propertyPath: m_Text
-      value: Endure
+      value: Answer
+      objectReference: {fileID: 0}
+    - target: {fileID: 6514927299713338698, guid: 4fe54c34e578d334880500d31d9e7694, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7422357946850997151, guid: 4fe54c34e578d334880500d31d9e7694, type: 3}
       propertyPath: m_Name
@@ -6947,7 +6951,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "CON\xD75\u3067\u6210\u529F"
+  m_Text: "EDU\xD75\u3067\u6210\u529F"
 --- !u!222 &552823426
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8865,7 +8869,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "CON\xD75\u3067\u6210\u529F"
+  m_Text: "DEX\xD75\u3067\u6210\u529F"
 --- !u!222 &688362526
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12446,7 +12450,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5236362487935520046, guid: 4fe54c34e578d334880500d31d9e7694, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnehunderedA
+      value: OnehunderedI
       objectReference: {fileID: 0}
     - target: {fileID: 5236362487935520046, guid: 4fe54c34e578d334880500d31d9e7694, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
@@ -12538,7 +12542,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6514927299713338698, guid: 4fe54c34e578d334880500d31d9e7694, type: 3}
       propertyPath: m_Text
-      value: Charm
+      value: Research
+      objectReference: {fileID: 0}
+    - target: {fileID: 6514927299713338698, guid: 4fe54c34e578d334880500d31d9e7694, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 7422357946850997151, guid: 4fe54c34e578d334880500d31d9e7694, type: 3}
       propertyPath: m_Name
@@ -17743,7 +17751,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "APP\xD75\u3067\u6210\u529F"
+  m_Text: "INT\xD75\u3067\u6210\u529F"
 --- !u!222 &1195957081
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -18924,7 +18932,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 53cd9b0e8f41ef4438932a90394ab356, type: 3}
+  m_Sprite: {fileID: 21300000, guid: aa1a3cf5f742adc4a894d189b1e6f53c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -20075,7 +20083,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5236362487935520046, guid: 4fe54c34e578d334880500d31d9e7694, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnehunderedC
+      value: OnehunderedD
       objectReference: {fileID: 0}
     - target: {fileID: 5236362487935520046, guid: 4fe54c34e578d334880500d31d9e7694, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
@@ -20167,7 +20175,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6514927299713338698, guid: 4fe54c34e578d334880500d31d9e7694, type: 3}
       propertyPath: m_Text
-      value: Endure
+      value: Escape
       objectReference: {fileID: 0}
     - target: {fileID: 7422357946850997151, guid: 4fe54c34e578d334880500d31d9e7694, type: 3}
       propertyPath: m_Name
@@ -21719,7 +21727,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5236362487935520046, guid: 4fe54c34e578d334880500d31d9e7694, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnehunderedA
+      value: OnehunderedI
       objectReference: {fileID: 0}
     - target: {fileID: 5236362487935520046, guid: 4fe54c34e578d334880500d31d9e7694, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
@@ -21811,7 +21819,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6514927299713338698, guid: 4fe54c34e578d334880500d31d9e7694, type: 3}
       propertyPath: m_Text
-      value: Charm
+      value: Knowledge
+      objectReference: {fileID: 0}
+    - target: {fileID: 6514927299713338698, guid: 4fe54c34e578d334880500d31d9e7694, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 7422357946850997151, guid: 4fe54c34e578d334880500d31d9e7694, type: 3}
       propertyPath: m_Name
@@ -24361,7 +24373,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1574058440
 RectTransform:
   m_ObjectHideFlags: 0
@@ -29781,7 +29793,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 53cd9b0e8f41ef4438932a90394ab356, type: 3}
+  m_Sprite: {fileID: 21300000, guid: be145a8b9fa83e748aa15bae63389a41, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -31393,7 +31405,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "APP\xD75\u3067\u6210\u529F"
+  m_Text: "INT\xD75\u3067\u6210\u529F"
 --- !u!222 &2021509737
 CanvasRenderer:
   m_ObjectHideFlags: 0
