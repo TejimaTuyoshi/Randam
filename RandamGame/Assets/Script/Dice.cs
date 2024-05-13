@@ -225,7 +225,7 @@ public class Dice : MonoBehaviour
                     break;
                 case 5:
                     MinusPanel5.SetActive(true);
-                    text4.text = ("狂人が現れ、\r\n「化物!」と襲い掛かってきた！");
+                    text4.text = ("墓場を発見!\r\nしかし、墓から手が伸びてきた!");
                     break;
                 case 6:
                     MinusPanel6.SetActive(true);

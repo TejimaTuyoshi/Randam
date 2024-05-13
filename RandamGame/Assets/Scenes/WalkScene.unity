@@ -11027,7 +11027,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5236362487935520046, guid: 4fe54c34e578d334880500d31d9e7694, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnehunderedA
+      value: OnehunderedD
       objectReference: {fileID: 0}
     - target: {fileID: 5236362487935520046, guid: 4fe54c34e578d334880500d31d9e7694, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
@@ -11119,7 +11119,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6514927299713338698, guid: 4fe54c34e578d334880500d31d9e7694, type: 3}
       propertyPath: m_Text
-      value: Charm
+      value: Escape
       objectReference: {fileID: 0}
     - target: {fileID: 7422357946850997151, guid: 4fe54c34e578d334880500d31d9e7694, type: 3}
       propertyPath: m_Name
@@ -12112,7 +12112,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 53cd9b0e8f41ef4438932a90394ab356, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 875a26a73f875cf4a9f801b808c551c6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -16886,7 +16886,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "APP\xD75\u3067\u6210\u529F"
+  m_Text: "DEX\xD75\u3067\u6210\u529F"
 --- !u!222 &1152124687
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -20220,7 +20220,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1353328576
 RectTransform:
   m_ObjectHideFlags: 0
