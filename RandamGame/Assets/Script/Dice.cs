@@ -314,6 +314,11 @@ public class Dice : MonoBehaviour
     { _plus = true; }
     public void Happening()
     { _Happening = true; }
+    public void NonText()
+    { text4.text = ("‰½‚à”ƒ‚í‚È‚©‚Á‚½..."); }
+    public void Blank()
+    { text4.text = ("a"); }
+
 
     public void OnehunderedST()
     {
