@@ -317,7 +317,7 @@ public class Dice : MonoBehaviour
     public void NonText()
     { text4.text = ("‰½‚à”ƒ‚í‚È‚©‚Á‚½..."); }
     public void Blank()
-    { text4.text = ("a"); }
+    { text4.text = (" "); }
 
 
     public void OnehunderedST()
