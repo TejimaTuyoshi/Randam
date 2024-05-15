@@ -243,7 +243,7 @@ public class Dice : MonoBehaviour
                     break;
                 case 2:
                     PlusPanel2.SetActive(true);
-                    text4.text = ("狂人が現れ、\r\n「化物!」と襲い掛かってきた！");
+                    text4.text = ("湧水を飲んだ時、\r\n頭が冴えわたる!(成長判定=失敗で成長)");
                     break;
                 case 3:
                     PlusPanel3.SetActive(true);

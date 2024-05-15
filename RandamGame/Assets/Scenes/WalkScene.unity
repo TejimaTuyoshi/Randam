@@ -2195,7 +2195,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "STR\xD75\u3067\u6210\u529F"
+  m_Text: "INT\xD75\u3067\u6210\u529F"
 --- !u!222 &210295279
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6588,6 +6588,10 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5236362487935520046, guid: 4fe54c34e578d334880500d31d9e7694, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5236362487935520046, guid: 4fe54c34e578d334880500d31d9e7694, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
       value: 6
       objectReference: {fileID: 0}
@@ -6669,7 +6673,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5236362487935520046, guid: 4fe54c34e578d334880500d31d9e7694, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnehunderedST
+      value: OnehunderedI
       objectReference: {fileID: 0}
     - target: {fileID: 5236362487935520046, guid: 4fe54c34e578d334880500d31d9e7694, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
@@ -6694,6 +6698,10 @@ PrefabInstance:
     - target: {fileID: 5236362487935520046, guid: 4fe54c34e578d334880500d31d9e7694, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[6].m_MethodName
       value: Plus
+      objectReference: {fileID: 0}
+    - target: {fileID: 5236362487935520046, guid: 4fe54c34e578d334880500d31d9e7694, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Dice, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5236362487935520046, guid: 4fe54c34e578d334880500d31d9e7694, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
@@ -6736,6 +6744,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5236362487935520046, guid: 4fe54c34e578d334880500d31d9e7694, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5236362487935520046, guid: 4fe54c34e578d334880500d31d9e7694, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
@@ -6761,11 +6773,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6514927299713338698, guid: 4fe54c34e578d334880500d31d9e7694, type: 3}
       propertyPath: m_Text
-      value: Strength
+      value: Intelligence
       objectReference: {fileID: 0}
     - target: {fileID: 6514927299713338698, guid: 4fe54c34e578d334880500d31d9e7694, type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 40
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 7422357946850997151, guid: 4fe54c34e578d334880500d31d9e7694, type: 3}
       propertyPath: m_Name
@@ -14011,7 +14023,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5400e2405bebabb4a92a4d9b32a68578, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a7a692851e8297342be60043deada067, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -16580,7 +16592,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "APP\xD75\u3067\u6210\u529F"
+  m_Text: "EDU\xD75\u3067\u6210\u529F"
 --- !u!222 &1121564660
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16682,6 +16694,10 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5236362487935520046, guid: 4fe54c34e578d334880500d31d9e7694, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5236362487935520046, guid: 4fe54c34e578d334880500d31d9e7694, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
       value: 6
       objectReference: {fileID: 0}
@@ -16763,7 +16779,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5236362487935520046, guid: 4fe54c34e578d334880500d31d9e7694, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnehunderedD
+      value: OnehunderedE
       objectReference: {fileID: 0}
     - target: {fileID: 5236362487935520046, guid: 4fe54c34e578d334880500d31d9e7694, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
@@ -16788,6 +16804,10 @@ PrefabInstance:
     - target: {fileID: 5236362487935520046, guid: 4fe54c34e578d334880500d31d9e7694, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[6].m_MethodName
       value: Plus
+      objectReference: {fileID: 0}
+    - target: {fileID: 5236362487935520046, guid: 4fe54c34e578d334880500d31d9e7694, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Dice, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5236362487935520046, guid: 4fe54c34e578d334880500d31d9e7694, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
@@ -16830,6 +16850,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5236362487935520046, guid: 4fe54c34e578d334880500d31d9e7694, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5236362487935520046, guid: 4fe54c34e578d334880500d31d9e7694, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
@@ -16855,7 +16879,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6514927299713338698, guid: 4fe54c34e578d334880500d31d9e7694, type: 3}
       propertyPath: m_Text
-      value: Dexterity
+      value: Education
       objectReference: {fileID: 0}
     - target: {fileID: 6514927299713338698, guid: 4fe54c34e578d334880500d31d9e7694, type: 3}
       propertyPath: m_FontData.m_FontSize
@@ -16917,7 +16941,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -186, y: 418}
+  m_AnchoredPosition: {x: -150, y: 400}
   m_SizeDelta: {x: 1544.8608, y: 68.357}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1124488811
@@ -29936,7 +29960,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -186, y: 352}
+  m_AnchoredPosition: {x: -150, y: 328}
   m_SizeDelta: {x: 1544.8608, y: 68.357}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1839242323
