@@ -1,3 +1,4 @@
+using TMPro.EditorUtilities;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -18,7 +19,7 @@ public class Dice : MonoBehaviour
     [SerializeField] int _siz = 9;
     [SerializeField] int _int = 9;
     [SerializeField] int _edu = 9;
-    [SerializeField] int _hp = 45;
+    [SerializeField] int _hp = 0;
     [SerializeField] bool _resultST = false;
     [SerializeField] bool _resultC = false;
     [SerializeField] bool _resultP = false;
@@ -58,14 +59,14 @@ public class Dice : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        _hp = _con + _siz;
     }
 
     // Update is called once per frame
     void Update()
     {
         text2.text = ("STR:" + _str + " CON:" + _con + " POW:" + _pow + " DEX:" + _dex + " APP:" + _app + " SIZ:" + _siz + " INT:" + _int + " EDU:" + _edu);
-        text3.text = ("HP:" + _hp + " / 45");
+        text3.text = ("HP:" + _hp + " / " + (_con + _siz));
 
         if (!_resultST && _result == true)
         {
@@ -251,7 +252,7 @@ public class Dice : MonoBehaviour
                     break;
                 case 4:
                     PlusPanel4.SetActive(true);
-                    text4.text = ("’Tõ‚µ‚Ä‚¢‚½‚çA‘Ö‚ğŒ©‚Â‚¯‚½‚ª\r\nr‚ç‚³‚ê‚Ä‚¢‚é...(¬’·”»’è=¸”s‚Å¬’·)");
+                    text4.text = ("’Tõ‚µ‚Ä‚¢‚½‚çA\r\n‘Ö‚ğŒ©‚Â‚¯‚½‚ªr‚ç‚³‚ê‚Ä‚¢‚é...(¬’·”»’è=¸”s‚Å¬’·)");
                     break;
                 case 5:
                     PlusPanel5.SetActive(true);
@@ -259,7 +260,7 @@ public class Dice : MonoBehaviour
                     break;
                 case 6:
                     PlusPanel6.SetActive(true);
-                    text4.text = ("‹¶l‚ªŒ»‚êA\r\nu‰»•¨!v‚ÆP‚¢Š|‚©‚Á‚Ä‚«‚½I(¬’·”»’è=¸”s‚Å¬’·)");
+                    text4.text = ("‹¦‰ï‚Åè‚ğ‰ˆ‚¦‚½ŠA\r\n‰½Ò‚©‚Ìº‚ª•·‚±‚¦‚Ä‚«‚½...(¬’·”»’è=¸”s‚Å¬’·)");
                     break;
             }
         }
@@ -295,10 +296,19 @@ public class Dice : MonoBehaviour
         }
         if (other.gameObject.CompareTag("Heal"))
         {
-            if (_hp < 45)
+            if (_hp < (_con + _siz))
             {
                 text4.text = ("HP‚ª‰ñ•œ‚µ‚½!Ô¯ÀÈ!");
                 HP();
+            }
+            else if (_hp > (_con + _siz)) 
+            {
+                text4.text = ("HP‚ª‘½‚¢‚Ì‚ÅÌŒŒ‚³‚ê‚¿‚á‚Á‚½...");
+                --_hp;
+            }
+            else
+            {
+                text4.text = ("‚µ‚©‚µ‰½‚à‹N‚±‚ç‚È‚©‚Á‚½...");
             }
         }
         if (other.gameObject.CompareTag("Shop"))
