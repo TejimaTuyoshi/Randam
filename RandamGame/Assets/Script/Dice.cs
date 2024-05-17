@@ -251,15 +251,15 @@ public class Dice : MonoBehaviour
                     break;
                 case 4:
                     PlusPanel4.SetActive(true);
-                    text4.text = ("探索していたら、\r\n書斎を見つけたが荒らされている...");
+                    text4.text = ("探索していたら、書斎を見つけたが\r\n荒らされている...(成長判定=失敗で成長)");
                     break;
                 case 5:
                     PlusPanel5.SetActive(true);
-                    text4.text = ("狂人が現れ、\r\n「化物!」と襲い掛かってきた！");
+                    text4.text = ("人助けをしたところ、叡智を\r\nくれるというが...?(成長判定=失敗で成長)");
                     break;
                 case 6:
                     PlusPanel6.SetActive(true);
-                    text4.text = ("狂人が現れ、\r\n「化物!」と襲い掛かってきた！");
+                    text4.text = ("狂人が現れ、\r\n「化物!」と襲い掛かってきた！(成長判定=失敗で成長)");
                     break;
             }
         }
