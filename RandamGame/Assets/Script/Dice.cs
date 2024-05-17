@@ -148,49 +148,49 @@ public class Dice : MonoBehaviour
             _plus = false;
             _edu++;
         }
-        if (!_resultST && _Happening == true)
+        if (_resultST && _Happening == true)
         {
             _Happening = false;
             _str++;
             _app--;
         }
-        if (!_resultC && _Happening == true)
+        if (_resultC && _Happening == true)
         {
             _Happening = false;
             _con++;
             _pow--;
         }
-        if (!_resultP && _Happening == true)
+        if (_resultP && _Happening == true)
         {
             _Happening = false;
             _pow++;
             _con--;
         }
-        if (!_resultD && _Happening == true)
+        if (_resultD && _Happening == true)
         {
             _Happening = false;
             _dex++;
             _siz--;
         }
-        if (!_resultA && _Happening == true)
+        if (_resultA && _Happening == true)
         {
             _Happening = false;
             _app++;
             _str--;
         }
-        if (!_resultSI && _Happening == true)
+        if (_resultSI && _Happening == true)
         {
             _Happening = false;
             _siz++;
             _dex--;
         }
-        if (!_resultI && _Happening == true)
+        if (_resultI && _Happening == true)
         {
             _Happening = false;
             _int++;
             _edu--;
         }
-        if (!_resultE && _Happening == true)
+        if (_resultE && _Happening == true)
         {
             _Happening = false;
             _edu++;
@@ -270,11 +270,11 @@ public class Dice : MonoBehaviour
             {
                 case 1:
                     HappeningPanel.SetActive(true);
-                    text4.text = ("狂人が現れ、\r\n「化物!」と襲い掛かってきた！");
+                    text4.text = ("商人が現れ、\r\n取引を持ちかける...");
                     break;
                 case 2:
                     HappeningPanel2.SetActive(true);
-                    text4.text = ("狂人が現れ、\r\n「化物!」と襲い掛かってきた！");
+                    text4.text = ("廃墟にて機械を見つけたが...");
                     break;
                 case 3:
                     HappeningPanel3.SetActive(true);
