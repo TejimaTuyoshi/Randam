@@ -282,7 +282,7 @@ public class Dice : MonoBehaviour
                     break;
                 case 4:
                     HappeningPanel4.SetActive(true);
-                    text4.text = ("狂人が現れ、\r\n「化物!」と襲い掛かってきた！");
+                    text4.text = ("謎の銅像を見つけたので\r\n祈ってみると...");
                     break;
                 case 5:
                     HappeningPanel5.SetActive(true);
