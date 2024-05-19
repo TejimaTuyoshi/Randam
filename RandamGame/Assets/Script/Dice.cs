@@ -286,7 +286,7 @@ public class Dice : MonoBehaviour
                     break;
                 case 5:
                     HappeningPanel5.SetActive(true);
-                    text4.text = ("狂人が現れ、\r\n「化物!」と襲い掛かってきた！");
+                    text4.text = ("「代償の間」を見つけたが、\r\n代償にするものなんて...");
                     break;
                 case 6:
                     HappeningPanel6.SetActive(true);
