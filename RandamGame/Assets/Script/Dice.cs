@@ -290,7 +290,7 @@ public class Dice : MonoBehaviour
                     break;
                 case 6:
                     HappeningPanel6.SetActive(true);
-                    text4.text = ("狂人が現れ、\r\n「化物!」と襲い掛かってきた！");
+                    text4.text = ("謎の食べ物を手に入れたが、\r\n嫌な予感がする...");
                     break;
             }
         }
