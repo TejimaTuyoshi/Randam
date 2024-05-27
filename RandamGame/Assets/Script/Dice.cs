@@ -35,6 +35,8 @@ public class Dice : MonoBehaviour
     [SerializeField] Text text2;
     [SerializeField] Text text3;
     [SerializeField] Text text4;
+    [SerializeField] Text ddoltext;
+    [SerializeField] Text ddoltext2;
     [SerializeField] GameObject Panel;
     [SerializeField] GameObject MinusPanel;
     [SerializeField] GameObject MinusPanel2;
@@ -67,6 +69,8 @@ public class Dice : MonoBehaviour
     {
         text2.text = ("STR:" + _str + " CON:" + _con + " POW:" + _pow + " DEX:" + _dex + " APP:" + _app + " SIZ:" + _siz + " INT:" + _int + " EDU:" + _edu);
         text3.text = ("HP:" + _hp + " / " + (_con + _siz));
+        ddoltext.text = (" ");
+        ddoltext2.text = (" ");
 
         if (!_resultST && _result == true)
         {
@@ -313,6 +317,8 @@ public class Dice : MonoBehaviour
         }
         if (other.gameObject.CompareTag("Shop"))
         { ShopPanel.SetActive(true); }
+        if (other.gameObject.CompareTag("Goal"))
+        { Ddol(); }
     }
 
     public void HP()
@@ -525,7 +531,9 @@ public class Dice : MonoBehaviour
 
     public void Ddol()
     {
-        DontDestroyOnLoad(text2);
-        DontDestroyOnLoad(text3);
+        ddoltext = text2;
+        ddoltext2 = text3;
+        DontDestroyOnLoad(ddoltext);
+        DontDestroyOnLoad(ddoltext2);
     }
 }
