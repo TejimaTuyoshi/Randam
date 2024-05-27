@@ -521,4 +521,11 @@ public class Dice : MonoBehaviour
     { _int++; }
     public void Eadd()
     { _edu++; }
+
+
+    public void Ddol()
+    {
+        DontDestroyOnLoad(text2);
+        DontDestroyOnLoad(text3);
+    }
 }
