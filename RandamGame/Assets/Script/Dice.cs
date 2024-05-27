@@ -62,6 +62,8 @@ public class Dice : MonoBehaviour
     void Start()
     {
         _hp = _con + _siz;
+        ddoltext.text = (" ");
+        ddoltext2.text = (" ");
     }
 
     // Update is called once per frame
@@ -69,8 +71,6 @@ public class Dice : MonoBehaviour
     {
         text2.text = ("STR:" + _str + " CON:" + _con + " POW:" + _pow + " DEX:" + _dex + " APP:" + _app + " SIZ:" + _siz + " INT:" + _int + " EDU:" + _edu);
         text3.text = ("HP:" + _hp + " / " + (_con + _siz));
-        ddoltext.text = (" ");
-        ddoltext2.text = (" ");
 
         if (!_resultST && _result == true)
         {
