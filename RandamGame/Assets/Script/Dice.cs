@@ -37,6 +37,7 @@ public class Dice : MonoBehaviour
     [SerializeField] Text text4;
     [SerializeField] Text ddoltext;
     [SerializeField] Text ddoltext2;
+    [SerializeField] Text ddoltext3;
     [SerializeField] GameObject Panel;
     [SerializeField] GameObject MinusPanel;
     [SerializeField] GameObject MinusPanel2;
@@ -533,5 +534,6 @@ public class Dice : MonoBehaviour
         ddoltext2 = text3;
         DontDestroyOnLoad(ddoltext);
         DontDestroyOnLoad(ddoltext2);
+        DontDestroyOnLoad(ddoltext3);
     }
 }
