@@ -2847,7 +2847,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4672859614810958547, guid: 040f7ecf169f27041b84cfd23298c9b4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1089692096}
   m_SourcePrefab: {fileID: 100100000, guid: 040f7ecf169f27041b84cfd23298c9b4, type: 3}
 --- !u!1001 &158980596
 PrefabInstance:
@@ -22442,6 +22445,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1061745850}
   m_CullTransparentMesh: 1
+--- !u!1 &1089692091 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4672859614810958547, guid: 040f7ecf169f27041b84cfd23298c9b4, type: 3}
+  m_PrefabInstance: {fileID: 154548637}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1089692096
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1089692091}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1.9759922, z: 1}
+  m_Center: {x: 0, y: 0.48799622, z: 0}
 --- !u!1 &1090303212
 GameObject:
   m_ObjectHideFlags: 0
@@ -37333,6 +37362,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tereporter: {fileID: 0}
   Player: {fileID: 0}
+  text: {fileID: 1673246745}
 --- !u!1001 &1701293559
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -47911,6 +47941,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 910242097}
     - target: {fileID: 8423405860523672757, guid: 5b0646a8e459c7747865e7062205d342, type: 3}
+      propertyPath: ddoltext3
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8423405860523672757, guid: 5b0646a8e459c7747865e7062205d342, type: 3}
       propertyPath: MinusPanel
       value: 
       objectReference: {fileID: 1574058439}
@@ -48102,7 +48136,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5236362487935520046, guid: 4fe54c34e578d334880500d31d9e7694, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5236362487935520046, guid: 4fe54c34e578d334880500d31d9e7694, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -48119,7 +48153,7 @@ PrefabInstance:
     - target: {fileID: 5236362487935520046, guid: 4fe54c34e578d334880500d31d9e7694, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 778376836}
+      objectReference: {fileID: 0}
     - target: {fileID: 5236362487935520046, guid: 4fe54c34e578d334880500d31d9e7694, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -48134,7 +48168,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5236362487935520046, guid: 4fe54c34e578d334880500d31d9e7694, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: Blank
+      value: Move
       objectReference: {fileID: 0}
     - target: {fileID: 5236362487935520046, guid: 4fe54c34e578d334880500d31d9e7694, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -48142,7 +48176,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5236362487935520046, guid: 4fe54c34e578d334880500d31d9e7694, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: Dice, Assembly-CSharp
+      value: Ect, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5236362487935520046, guid: 4fe54c34e578d334880500d31d9e7694, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
