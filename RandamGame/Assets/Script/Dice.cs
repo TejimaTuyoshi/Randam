@@ -63,8 +63,6 @@ public class Dice : MonoBehaviour
     void Start()
     {
         _hp = _con + _siz;
-        ddoltext.text = (" ");
-        ddoltext2.text = (" ");
     }
 
     // Update is called once per frame
