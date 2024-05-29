@@ -318,8 +318,6 @@ public class Dice : MonoBehaviour
         }
         if (other.gameObject.CompareTag("Shop"))
         { ShopPanel.SetActive(true); }
-        if (other.gameObject.CompareTag("Goal"))
-        { Ddol(); }
     }
 
     public void HP()
@@ -527,13 +525,4 @@ public class Dice : MonoBehaviour
     public void Eadd()
     { _edu++; }
 
-
-    public void Ddol()
-    {
-        ddoltext = text2;
-        ddoltext2 = text3;
-        DontDestroyOnLoad(ddoltext);
-        DontDestroyOnLoad(ddoltext2);
-        DontDestroyOnLoad(ddoltext3);
-    }
 }
